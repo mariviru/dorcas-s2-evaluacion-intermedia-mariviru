@@ -13,12 +13,8 @@ console.log('> ' + getRandomNumber(100));
 
 
 function showNumber() {
-	userNumber = input.value;
-	if(userNumber > getRandomNumber) {
-		return
-	}
-	console.log(userNumber);
-	
+  userNumber = input.value;
+  console.log(userNumber);
 }
 
 button.addEventListener('click', showNumber);
