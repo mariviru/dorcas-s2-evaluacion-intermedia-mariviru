@@ -7,7 +7,6 @@ var input = document.querySelector('.js__input');
 var span = document.querySelector('.js__message');
 var seeCounter = document.querySelector('.js__counter');
 
-var userNumber = input.value;
 var counter = 0;
 var compareInput;
 var messageInit = 'Escribe un número y dale a Prueba';
@@ -23,8 +22,7 @@ console.log('aleatorio = ' + aleatoryNumber);
 seeMessage(messageInit);
 
 function showNumber() {
-  userNumber = input.value;
-  console.log(userNumber);
+  console.log(input.value);
 }
 
 function counterClicks() {
