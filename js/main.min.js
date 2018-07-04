@@ -41,10 +41,14 @@ function compareNumbers() {
 
   if (compareInput === aleatoryNumber) {
     seeMessage('Ganadora');
+  } else if (compareInput > 100 || compareInput < 1) {
+    seeMessage('El número debe estar entre 1 y 100');
   } else if (compareInput < aleatoryNumber) {
     seeMessage('Te has quedado corta');
   } else if (compareInput > aleatoryNumber) {
     seeMessage('Te has pasado');
+  } else {
+    seeMessage('Debes introducir un número');
   }
 }
 
